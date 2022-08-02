@@ -27,10 +27,8 @@
         <td><%= task.start_day.strftime('%Y年%m月%d日') %></td>
         <td><%= task.finish_day.strftime('%Y年%m月%d日') %></td>
         <td>
-          <% if task.allday == true %>
+          <% if task.allday %>
             ○
-          <% else task.allday == false %>
-
           <% end %>
         </td>
         <td><%= task.updated_at.to_s(:datetime_jp) %></td>

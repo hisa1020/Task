@@ -16,10 +16,8 @@
   <tr>
     <th>終日</th>
     <td>
-      <% if @task.allday == true %>
+      <% if @task.allday %>
         ○
-      <% else @task.allday == false %>
-
       <% end %>
     </td>
   </tr>
@@ -28,7 +26,6 @@
     <td><%= @task.memo %></td>
   </tr>
 </table>
-
 <div>
   <ul>
     <li><%= link_to"スケジュール一覧に戻る", :tasks %></li>

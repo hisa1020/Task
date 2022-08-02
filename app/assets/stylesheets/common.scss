@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   position: relative;
@@ -6,59 +6,73 @@ body{
   padding-bottom: 100px;
   box-sizing: border-box;
 }
-header,footer{
+
+header,footer {
   width: 100%;
   padding: 10px;
   margin: 0;
   color: #fff;
   background-color: #800080;
 }
-footer{
+
+footer {
   position: absolute;
   bottom: 0px;
 }
-.container{
+
+.container {
   margin: 50px 15px;
 }
-table{
+
+table {
   border-collapse: collapse;
 }
-table th,table td{
+
+table th, table td { 
   border: 1px solid black;
   padding: 10px 20px;
 }
-table th{
+
+table th {
   background-color: #CCCCCC;
 }
-table td{
+
+table td {
   background-color: #EEEEEE;
   text-align: center;
 }
-input{
+
+input {
   width: 100%;
   padding: 5px;
   font-size: 16px;
 }
-input[type=submit]{
+
+input[type=submit] {
   width: auto;
 }
-table td p{
+
+table td p {
   margin: 0;
   padding: 0;
 }
-textarea{
+
+textarea {
   width: 350px;
   height: 200px;
   font-size: 16px;
 }
-ul li{
+
+ul li {
   list-style: none;
   padding-left: 0px;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.notice{
+
+.notice {
   background-color: #ccf;
   border:2px solid #6A5ACD;
   padding: 15px;
