@@ -1,24 +1,5 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# タスク管理アプリ
+ポテパンキャンプ課題⑥  
+Rails学習終了後の課題の一つ目。  
+タスク（スケジュール）の登録、表示、編集、削除ができます。    
+バリデーションを独自で付け加えるなど工夫しました。  
