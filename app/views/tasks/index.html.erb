@@ -1,0 +1,53 @@
+<h2>スケジュール一覧</h2>
+
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>タイトル</th>
+      <th>開始日</th>
+      <th>終了日</th>
+      <th>終日</th>
+      <th>スケジュール更新日時</th>
+      <th>確認</th>
+      <th>編集</th>
+      <th>削除</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tasks.each do |task| %>
+      <tr>
+        <td><%= task.id %></td>
+        <td><%= task.title %></td>
+        <td><%= task.start_day.strftime('%Y年%m月%d日') %></td>
+        <td><%= task.finish_day.strftime('%Y年%m月%d日') %></td>
+        <td>
+          <% if task.allday %>
+            ○
+          <% end %>
+        </td>
+        <td><%= task.updated_at.to_s(:datetime_jp) %></td>
+        <td>
+          <%= link_to"確認", task%>
+        </td>
+        <td>
+          <%= link_to"編集", [:edit,task] %>
+        </td>
+        <td>
+          <%= link_to"削除", task,method: :delete, data:{confirm:"本当に削除しますか？"} %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p><%= link_to"スケジュール新規登録", :new_task%></p>
+
+<% content_for :counter do %>
+<h2>スケジュール合計:<%= Task.count %></h2>
+<% end %>
